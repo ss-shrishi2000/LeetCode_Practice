@@ -17,7 +17,9 @@ int main()
                 }
 
                 if(ca>2)
-                    ans1 += (ca-2), cout<<ca<<" " << ans1 << endl;
+                    ans1 += (ca-2);
+                
+                ca=0;
             }
             else
             {
@@ -28,11 +30,13 @@ int main()
                 }
 
                 if(cb>2)
-                    ans2 += (cb-2), cout<<cb<<" "<< ans2 <<endl;
+                    ans2 += (cb-2);
+                cb=0;
             }
         }
 
-        cout<< ans1 << " " << ans2 << endl;
+       // cout<< ans1 << " " << ans2 << endl;
+    
         if(ans1>ans2)
             cout<<"Alice"<<endl;
         else
