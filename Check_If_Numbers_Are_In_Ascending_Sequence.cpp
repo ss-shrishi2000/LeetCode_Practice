@@ -17,14 +17,28 @@ int main()
                r = r*10 + (s[i]-'0');
                i++;
             }
-            cout<<r<<endl;
+            // cout<<r<<endl;
             vec.push_back(r);
         }
         else
             i++;
     }
-    for(int i=0;i<vec.size();i++)
-        cout<<vec[i]<<" ";
+    
+    bool f=true;
+    
+    for(int i=1;i<vec.size();i++)
+    {
+        if(vec[i] < vec[i-1])
+        {
+            f=false;
+            break;
+        }
+    }
+    if(f)
+        cout<<"Yes";
+    else
+        cout<<"No";
+    
     return 0;
 
 }
