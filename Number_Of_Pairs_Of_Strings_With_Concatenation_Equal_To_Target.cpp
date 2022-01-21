@@ -28,7 +28,7 @@ Explanation: Valid pairs are:
 - (1, 2): "1" + "1"
 - (2, 1): "1" + "1"
   
-  SOLUTION :- 
+  SOLUTION 1:- 
     
     First Solution having a higher time complexity (O(n^2)) using space complexity O(1) whereas second solution having a time complexity O(n) and space complexity O(n).
     
@@ -54,7 +54,8 @@ public:
     }
 };
 
-    
+SOLUTION 2:-
+  
     class Solution {
 public:
     int numOfPairs(vector<string>& nums, string target) 
