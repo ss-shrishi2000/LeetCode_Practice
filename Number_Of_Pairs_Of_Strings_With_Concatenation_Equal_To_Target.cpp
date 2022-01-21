@@ -29,6 +29,32 @@ Explanation: Valid pairs are:
 - (2, 1): "1" + "1"
   
   SOLUTION :- 
+    
+    First Solution having a higher time complexity (O(n^2)) using space complexity O(1) whereas second solution having a time complexity O(n) and space complexity O(n).
+    
+    class Solution {
+public:
+    int numOfPairs(vector<string>& nums, string target) 
+    {
+        int ans=0;
+        for(int i=0;i<nums.size();i++)
+        {
+            for(int j=0; j<nums.size() && j!=i ; j++)
+            {
+                string x = nums[i];
+                string y = nums[j];
+                if(x+y == target)
+                    ans++;
+                if(y+x == target)
+                    ans++;
+            }
+        }
+        
+        return ans;
+    }
+};
+
+    
     class Solution {
 public:
     int numOfPairs(vector<string>& nums, string target) 
