@@ -35,7 +35,9 @@ public:
     int reductionOperations(vector<int>& arr)
     {
     int n=arr.size();
-    if(n==1) return 0;
+    if(n==1) 
+      return 0;
+      
     int i=n-1;
     int j=n-2;
     int ans=0;
@@ -65,7 +67,7 @@ public:
         }
     }
     */
-        
+      
     return ans;  
     }
 };
