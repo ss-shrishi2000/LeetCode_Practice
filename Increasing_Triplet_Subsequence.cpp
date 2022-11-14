@@ -43,10 +43,12 @@ int main()
             suffix[i] = max(nums[i], suffix[i+1]);
         }
         bool f = false;
+    /*
         for(int i = 0; i < n; i++)
         {
             cout<<prefix[i]<<" "<<suffix[i]<<endl;
         }
+    */
         for(int i = 0; i < n; i++)
         {
             if(nums[i] != prefix[i] && nums[i] != suffix[i] &&
